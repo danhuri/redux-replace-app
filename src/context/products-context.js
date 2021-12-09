@@ -29,7 +29,7 @@ const DUMMY_PRODUCTS = [
 
 export const ProductsContext = React.createContext({
     products: [],
-    toggleFav: () => {},
+    toggleFav: (id) => {},
 });
 
 export default props => {

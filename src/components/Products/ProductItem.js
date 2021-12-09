@@ -8,11 +8,11 @@ import { ProductsContext } from '../../context/products-context';
 
 const ProductItem = props => {
   //const dispatch = useDispatch();
-  const productCtx = useContext(ProductsContext);
+  const toggleFav = useContext(ProductsContext).toggleFav;
 
   const toggleFavHandler = () => {
     //dispatch(toggleFav(props.id));
-    productCtx.toggleFav(props.id);
+    toggleFav(props.id);
   };
 
   return (
